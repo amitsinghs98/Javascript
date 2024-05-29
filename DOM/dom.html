@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="codehelp">Welcome to CodeHelp</div>
+
+    <div class="welcome">Welcome to CodeHelp1
+        <h4>error</h4>
+        <h5>nohing </h5>
+    </div>
+    <div class="welcome">Welcome to CodeHelp2</div>
+    <div id="codehelp3">Welcome to CodeHelp3</div>
+    <p class="welcome">Welcome to CodeHelp4</p>
+    <span class="welcome">Welcome to CodeHelp5</span>
+<div><pre><code>Code change me</code></pre></div>
+    <h3>Welcome to CodeHelp</h3>
+    <div>
+<h1>the new website</h1>
+<div>
+<h2>with all the details try to change me</h2></div></div>
+    <div class = "block">
+        <h4> hey my name is <span id = 'username'>amit singh</span></h4>
+    </div>
+
+<script>
+// here we will manipulate with query selector
+const divChange = document.querySelector('div'); // it selects the first element and ignore rest
+divChange.style.fontSize="49px";
+
+// let element = document.querySelectorAll(".welcome");
+// element.forEach(element => { 
+//     element.style.backgroundColor = "yellow"; 
+// }); // we can iterate over nodelist even nodelist is not an array
+
+// changing the code change me 
+const codechange = document.querySelector('pre');
+const changeName = document.querySelector('.welcome');
+
+console.log(codechange);
+const appendnew = document.createElement('h1');
+const chap = appendnew.textContent='append done';
+chap.toUpperCase()
+codechange.appendChild(appendnew)
+console.log(changeName.appendChild.chap);
+
+// console.log(changeName.innerHTML); // runs but not correct bcz it asks for the html tag but we can use inner text 
+// if we have 2 id with same name then also it will pick 1st one and chnage 
+//children returns the htmlcollection 
+
+changeName.innerText = 'rohitash'
+</script>
+</body>
+</html>
